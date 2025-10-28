@@ -1,0 +1,72 @@
+body{
+    height: 100vh;
+    margin: 0%;
+    background-image: url(../img/background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    color: wheat;
+}
+
+fieldset{
+    border: solid 1px wheat;
+}
+
+.campo{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 300px;
+    margin: 5px;
+}
+
+.campo input{
+    outline: none;
+    border: none;
+    border-bottom: solid 1px wheat ;
+    background: transparent;
+    color: wheat;
+    font-size: 20px;
+    width: 300px;
+}
+
+.campo label{
+    position: absolute;
+    transition: 0.3s;
+    color: wheat;
+    font-size: 20px;
+}
+
+.campo input:focus ~ label,
+.campo input:not(:placeholder-shown) ~ label,
+.campo input:-webkit-autofill ~ label {
+    font-size: 12px;
+    top: -10px;
+}
+
+.campo input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 1000px #000000 inset !important;
+    -webkit-text-fill-color: wheat !important;
+    transition: background-color 5000s ease-in-out 0s; 
+}
+
+.bt{
+    margin-top: 10px;
+    width: 300px;
+    background: none;
+    border: solid 1px wheat;
+    color: wheat;
+    padding: 10px;
+    cursor: pointer;
+    margin-top: 25px;
+}
+
+.bt:hover{
+    background-color: wheat ;
+    color: black;
+}

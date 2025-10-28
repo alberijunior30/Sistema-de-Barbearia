@@ -1,0 +1,91 @@
+body{
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image:url(../img/background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1{
+    color: wheat;
+}
+
+.fieldset{
+    border-color: wheat;
+}
+
+.campo{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 300px;
+    margin: 5px;
+    text-align: center;
+}
+
+.campo input{
+    outline: none;
+    border: none;
+    border-bottom: solid 1px wheat ;
+    background: transparent;
+    color: wheat;
+    font-size: 20px;
+}
+
+.input_senha{
+    outline: none;
+    border: none;
+    border-bottom: solid 1px wheat ;
+    background: transparent;
+    color: wheat;
+    font-size: 20px;
+    width: 255px
+}
+
+.campo label{
+    position: absolute;
+    transition: 0.3s;
+    color: wheat;
+    font-size: 20px;
+}
+
+.campo input:focus ~ label,
+.campo input:valid ~ label{
+    font-size: 12px;
+    top: -10px;
+}
+
+.bt{
+    margin-top: 10px;
+    width: 300px;
+    background: none;
+    border: solid 1px wheat;
+    color: wheat;
+    padding: 10px;
+    cursor: pointer;
+    margin-top: 25px;
+}
+
+.bt:hover{
+    background-color: wheat ;
+    color: black;
+}
+
+.ancora{
+    color: wheat;
+}
+
+.ancora:hover{
+    color: red;
+}
+
+.olho{
+    position: absolute;
+    color: wheat;
+    cursor: pointer;
+    right: 5px;
+    top: 15px;
+}
